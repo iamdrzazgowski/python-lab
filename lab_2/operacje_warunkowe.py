@@ -61,5 +61,5 @@ print(l)
 l3 = [i/3 for i in l]
 print(l3)
 
-lz1 = [[i*j for i in range(10)] for j in range(10)]
+lz1 = [[i*j for i in range(10)] for j in range(1,3)]
 print(lz1)
