@@ -71,4 +71,5 @@ for i in k:
     print(i)
 
 dl = dict([("a", 1), ("b", 2), ("c", 3)])
-print(dl)
+
+print(dl.get("d", "No exists"))
