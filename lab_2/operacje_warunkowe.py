@@ -1,3 +1,5 @@
+import string
+
 # x = int(input("Podaj x: "))
 # y = 5*(x == 10)
 
@@ -55,22 +57,32 @@
 
 # l = [f(i) for i in X if g(x)]
 
-l = [i ** 2 for i in range(1, 21) if i % 2 == 1]
-print(l)
-
-l3 = [i / 3 for i in l]
-print(l3)
-
-lz1 = [[i * j for i in range(10)] for j in range(1, 3)]
-print(lz1)
+# l = [i ** 2 for i in range(1, 21) if i % 2 == 1]
+# print(l)
+#
+# l3 = [i / 3 for i in l]
+# print(l3)
+#
+# lz1 = [[i * j for i in range(10)] for j in range(1, 3)]
+# print(lz1)
 
 # Krotka (Tuple)
-k = (i ** 2 for i in range(10))
-
-for i in k:
-    print(i)
+# k = (i ** 2 for i in range(10))
+#
+# for i in k:
+#     print(i)
 
 #można używać krotki i listy
-dl = dict([("a", 1), ("b", 2), ("c", 3)])
+# dl = dict([("a", 1), ("b", 2), ("c", 3)])
+#
+# print(dl.get("d", "No exists"))
 
-print(dl.get("d", "No exists"))
+# zmiana wartości klucza
+# dl["a"] = 30
+# print(dl)
+
+#Zadanie ze słownika
+
+tekst = "Ala ma kota".lower()
+d4 = dict([[i, tekst.count(i)] for i in string.ascii_lowercase])
+print(d4)
