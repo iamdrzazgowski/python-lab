@@ -55,13 +55,13 @@
 
 # l = [f(i) for i in X if g(x)]
 
-l = [i**2 for i in range(1, 21) if i % 2 == 1]
+l = [i ** 2 for i in range(1, 21) if i % 2 == 1]
 print(l)
 
-l3 = [i/3 for i in l]
+l3 = [i / 3 for i in l]
 print(l3)
 
-lz1 = [[i*j for i in range(10)] for j in range(1,3)]
+lz1 = [[i * j for i in range(10)] for j in range(1, 3)]
 print(lz1)
 
 # Krotka (Tuple)
@@ -69,3 +69,6 @@ k = (i ** 2 for i in range(10))
 
 for i in k:
     print(i)
+
+dl = dict([("a", 1), ("b", 2), ("c", 3)])
+print(dl)
