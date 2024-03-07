@@ -70,6 +70,7 @@ k = (i ** 2 for i in range(10))
 for i in k:
     print(i)
 
+#można używać krotki i listy
 dl = dict([("a", 1), ("b", 2), ("c", 3)])
 
 print(dl.get("d", "No exists"))
