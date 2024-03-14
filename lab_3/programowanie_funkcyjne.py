@@ -1,3 +1,6 @@
+from functools import reduce
+
+
 def kwadrat(x):
     return x ** 2
 
@@ -61,8 +64,7 @@ funkcja(4, "Ala", [1, 2, 3], s="error")
 
 
 def f2(x):
-    global i  # zmiana wartości zmiennej globalnej
-    i = 3
+    # global i  # zmiana wartości zmiennej globalnej
     return x ** i
 
 
@@ -90,8 +92,20 @@ print(list(map(lambda x: x ** 3, lista)))
 
 
 def select(x):
-    if x % 2 == 0:
+    if x > 0:
         return True
     return False
 
-print(list(filter(select, lista)))
+
+lista2 = [i * (-1) ** i for i in range(1, 21)]
+print(list(filter(select, lista2)))
+print(list(filter(lambda x: x > 0, lista2)))
+
+lista3 = ["a", "b", "c", "d"]
+
+
+def freduce(x, y):
+    print(x, y)
+    return x + y
+
+print(reduce(freduce, lista3))
