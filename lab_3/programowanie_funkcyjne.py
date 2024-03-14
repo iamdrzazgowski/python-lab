@@ -108,4 +108,28 @@ def freduce(x, y):
     print(x, y)
     return x + y
 
+
 print(reduce(freduce, lista3))
+
+n = 30
+print(reduce(lambda x, y: x + y, range(1, n + 1)))
+
+lista4 = [7, 6, 3, 8, 3, 7, 9, 2, 6, 1, 0, 3, 2, 7]
+print(sorted(lista4))
+print(sorted(lista4, key=lambda i: i % 2))
+
+lista5 = "Ala ma kota psa i chomika".split()
+print(sorted(lista5, key=lambda x: len(x), reverse=False))
+
+listaL = [1, 2, 3, 4]
+listaR = [1, 2, 3, 4]
+
+
+def ilsc(lista1, lista2):
+    return sum(map(lambda x, y: x * y, lista1, lista2))
+
+print(ilsc(listaL, listaR))
+
+listaP = list(range(1,31))
+print([i * 2 if i % 2 != 0 else i for i in list(filter(lambda x: x % 3 != 0, listaP))])
+print(list(map(lambda i: 2*i if i % 2 else i, list(filter(lambda x: x % 3 != 0, listaP)))))
