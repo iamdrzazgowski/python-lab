@@ -133,3 +133,7 @@ print(ilsc(listaL, listaR))
 listaP = list(range(1,31))
 print([i * 2 if i % 2 != 0 else i for i in list(filter(lambda x: x % 3 != 0, listaP))])
 print(list(map(lambda i: 2*i if i % 2 else i, list(filter(lambda x: x % 3 != 0, listaP)))))
+
+listaN = ["ala", "123", "pies98"]
+print(list(''.join([i for i in j if i.isalpha()]) for j in listaN))
+print(list(map(lambda j: ''.join(filter(lambda i: i.isalpha(),j)), listaN)))
