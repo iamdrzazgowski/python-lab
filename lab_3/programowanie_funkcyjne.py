@@ -4,9 +4,7 @@ from functools import reduce
 def kwadrat(x):
     return x ** 2
 
-
 print(kwadrat(5))
-
 
 def concat(s1, s2="nie ma", s3="nic"):
     """ documentation """
@@ -29,7 +27,6 @@ def rozszerz2(l=None, element=['x']):
         l = []
     l.append(element)
     return l
-
 
 print(rozszerz2())
 
