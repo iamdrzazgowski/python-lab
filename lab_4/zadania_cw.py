@@ -31,7 +31,7 @@ print([int(j) for j in [''.join([i for i in j if i.isdigit()]) for j in slowa] i
 """Zadanie 11"""
 
 print(f'Zadanie 11')
-lista_krotek = [(1,), (2, 3), (4, 5, 6), (7, 8, 6, 7), (3, 9, 12, 6)]
+lista_krotek = [(1,), (2, 3), (4, 5, 6), (6, 8, 6, 7), (3, 9, 12, 6)]
 
 # Użycie map i filter
 print(list(map(lambda krotka: tuple(krotka[:2]), filter(lambda krotka: len(krotka) >= 2, lista_krotek))))
