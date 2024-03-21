@@ -23,7 +23,7 @@ print(list(''.join([i for i in j if i.isalpha()]) for j in slowa))
 print(list(map(lambda x: ''.join(filter(str.isdigit, x)), slowa)))
 
 # Lista składana
-print(list(''.join([i for i in j if i.isdigit()]) for j in slowa))
+print([int(j) for j in [''.join([i for i in j if i.isdigit()]) for j in slowa] if j])
 
 """Zadanie 11"""
 
