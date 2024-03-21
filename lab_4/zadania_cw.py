@@ -91,3 +91,10 @@ def pole(*args):
         return "Problem z argumentami"
 
 print(pole(5, 7, 3))
+
+"""Zadanie 24"""
+
+print(f'Zadanie 24')
+
+l = [lambda x:x+1, lambda x:x**2, lambda x:x%3]
+print(list(map(lambda i: i(1), filter(lambda i: i(0) == 0, l))))
