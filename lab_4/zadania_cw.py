@@ -60,6 +60,15 @@ print(f'Zadanie 15')
 lista_slow = ["Ala ma kota", "pies", "Jakub", "Opole Lubelskkie"]
 print(list([element.split()[0] for element in lista_slow if ' ' in element]))
 
+"""Zadanie 16"""
+print(f'Zadanie 16')
+
+all_items = [1,2,3,4,5]
+condition = lambda x: x > 3
+not_all_items = not all(condition(x) for x in all_items)
+some_not_all = any(not condition(x) for x in all_items)
+
+
 """Zadanie 21"""
 
 print(f'Zadanie 21')
