@@ -5,3 +5,7 @@ def f1(x):
 
 def f2(x):
     return x ** 2 - 2 * x
+
+if __name__ == "__main__":
+    print("Moduł został załadowany")
+    print(f1(2))
