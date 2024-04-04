@@ -10,3 +10,8 @@ print("*%10s*" % ("Hello"))
 print("*%-10s*" % ("Hello"))
 
 #Formatowanie liczb
+
+print("*%10.4f*" % (2.6547657657))
+print("*%-10.4f*" % (2.6547657657))
+
+print("To jest %d%%." % (10))
