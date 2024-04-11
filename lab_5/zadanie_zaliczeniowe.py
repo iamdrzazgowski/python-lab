@@ -18,6 +18,7 @@ def change_rules(automat_rules, rules):
 
     return automat_rules
 
+
 def automat(rule, k, automat_rules):
 
     word = rule
