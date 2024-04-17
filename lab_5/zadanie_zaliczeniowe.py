@@ -52,6 +52,7 @@ automat_rules = {
     "___": "_"
 }
 
+
 changed_rules = change_rules(automat_rules, rule)
 word = generate_initial_state(n)
 print("Generated code: ", word)
