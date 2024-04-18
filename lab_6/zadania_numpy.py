@@ -10,4 +10,5 @@ l2 = np.arange(0,1,0.2)
 
 x = np.arange(1,5,1)
 x2 = np.array([i for i in range(11)])
-print(np.sin(x2))
+
+x3 = np.array(([1,2,3,4,5,6,7,8,9]))
