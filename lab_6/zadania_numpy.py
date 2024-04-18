@@ -7,5 +7,7 @@ t2 = np.ones(10)                            #tablica wypełniona jedynkami
 l = np.linspace(0,1,11)     #tworzenie przestrzeni liniowej
 l1 = np.linspace(0,1,6)
 l2 = np.arange(0,1,0.2)
-print(l1)
-print(l2)
+
+x = np.arange(1,5,1)
+x2 = np.array([i for i in range(11)])
+print(np.sin(x2))
