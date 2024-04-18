@@ -41,6 +41,7 @@ rule = input("Enter the rule: ")
 n = int(input("Enther the length of the sequence: "))
 k = int(input("Enter the number of steps: "))
 
+
 automat_rules = {
     "***": "_",
     "**_": "*",
