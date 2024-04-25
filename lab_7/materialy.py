@@ -13,10 +13,15 @@ import matplotlib.pyplot as plt
 # plt.scatter(np.sin(T), np.cos(T))
 # plt.show()
 
-X = np.linspace(-3,3,500)
-Y = 1/(X**2-1)
-Y[abs(Y) > 5] = np.NaN
-plt.figure(figsize=(15,5))
-plt.plot(X,Y)
-plt.plot([-1, -1], [-10,10], '--')
+# X = np.linspace(-3,3,500)
+# Y = 1/(X**2-1)
+# Y[abs(Y) > 5] = np.NaN
+# plt.figure(figsize=(15,5))
+# plt.plot(X,Y)
+# plt.plot([-1, -1], [-10,10], '--')
+# plt.show()
+
+X, Y = np.meshgrid(np.linspace(-10, 10, 11 ), np.linspace(-10, 10, 11))
+Z = X**2 + Y**2
+plt.contourf(X, Y, Z, levels=80)
 plt.show()
