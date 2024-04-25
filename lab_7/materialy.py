@@ -26,7 +26,7 @@ import matplotlib.pyplot as plt
 # plt.contourf(X, Y, Z, levels=80)
 # plt.show()
 
-c = -0.1 + 0.65j
+c = -0.4 + 0.6j
 
 x = []
 y = []
@@ -38,10 +38,19 @@ def julia_set(z, c):
 
         if abs(z) > 2:
             return 1
-    return 0
+    return 300
 
-d = 400
+d = 1000
 
 for i in range(d):
-    for j in range(c):
+    for j in range(d):
         xi = -1.5 + 3/d*i
+        yi = -1.5 + 3/d*j
+        x.append(xi)
+        y.append(yi)
+        colors.append(julia_set(xi+yi*1j, c))
+
+plt.figure(figsize=(15,15))
+plt.scatter(x, y, c=colors, s=0.1, cmap='prism')
+plt.axis('square')
+plt.show()
