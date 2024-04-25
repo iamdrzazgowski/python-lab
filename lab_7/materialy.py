@@ -21,7 +21,27 @@ import matplotlib.pyplot as plt
 # plt.plot([-1, -1], [-10,10], '--')
 # plt.show()
 
-X, Y = np.meshgrid(np.linspace(-10, 10, 11 ), np.linspace(-10, 10, 11))
-Z = X**2 + Y**2
-plt.contourf(X, Y, Z, levels=80)
-plt.show()
+# X, Y = np.meshgrid(np.linspace(-10, 10, 11 ), np.linspace(-10, 10, 11))
+# Z = X**2 + Y**2
+# plt.contourf(X, Y, Z, levels=80)
+# plt.show()
+
+c = -0.1 + 0.65j
+
+x = []
+y = []
+colors = []
+
+def julia_set(z, c):
+    for i in range(300):
+        z = z**2 + c
+
+        if abs(z) > 2:
+            return 1
+    return 0
+
+d = 400
+
+for i in range(d):
+    for j in range(c):
+        xi = -1.5 + 3/d*i
