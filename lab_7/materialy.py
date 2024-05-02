@@ -37,7 +37,7 @@ def julia_set(z, c):
         z = z**2 + c
 
         if abs(z) > 2:
-            return 1
+            return i
     return 300
 
 d = 1000
