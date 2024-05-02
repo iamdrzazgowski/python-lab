@@ -15,7 +15,7 @@ def f4(x, y):
 
 p0 = np.array([0, 0])
 
-num_steps = 100000
+num_steps = 10000
 
 probabilities = [0.85, 0.07, 0.07, 0.01]
 functions = [f1, f2, f3, f4]
@@ -31,7 +31,8 @@ x = [point[0] for point in points]
 y = [point[1] for point in points]
 
 plt.figure(figsize=(8, 6))
-plt.scatter(x, y, s=0.1, c='green')
+# Jeżeli chcemy drobniejsze punkty wystarczy zmienić s np. na wartość 0.1
+plt.scatter(x, y, s=1, c='green')
 plt.title('Zbiór punktów wygenerowany przez przekształcenia')
 plt.xlabel('x')
 plt.ylabel('y')
