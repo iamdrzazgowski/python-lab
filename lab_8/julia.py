@@ -1,13 +1,14 @@
+import numpy as np
 import matplotlib.pyplot as plt
 import time
 
 c = -0.1 + 0.65j
+d = 400
 
-x = []
-y = []
+x = np.array([])
+y = np.array([])
 
-colors = []
-
+colors = np.array([])
 
 def julia_set(z, c):
     for i in range(300):
@@ -16,16 +17,14 @@ def julia_set(z, c):
             return i
     return 300
 
-d = 400
-
 start_t = time.time()
 for i in range(d):
     for j in range(d):
         xi = -1.5 + 3 / d * i
         yi = -1.5 + 3 / d * j
-        x.append(xi)
-        y.append(yi)
-        colors.append(julia_set(xi + yi * 1j, c))
+        x = np.append(x, xi)
+        y = np.append(y, yi)
+        colors = np.append(colors, [julia_set(xi + yi * 1j, c)])
 
 print(time.time() - start_t)
 plt.figure(figsize=(10,10))
