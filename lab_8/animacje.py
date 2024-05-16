@@ -14,7 +14,7 @@ line = plot[0]
 def animate(frame):
     y[:-1] = y[1:]
     y[-1] = np.sin(2 * np.pi * (frame / 100))
-    line.set_data(y)
+    line.set_data(x, y)
     return line
 
 
