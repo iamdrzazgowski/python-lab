@@ -38,5 +38,5 @@ def evolve(frame_num, mat, grid):
 
 fig, ax = plt.subplots()
 mat = ax.imshow(grid, interpolation='nearest', cmap='binary')
-ani = animation.FuncAnimation(fig, evolve, fargs=(mat, grid), frames=314, interval=100, save_count=50)
+ani = animation.FuncAnimation(fig, evolve, fargs=(mat, grid), frames=314, interval=200, save_count=50)
 plt.show()
