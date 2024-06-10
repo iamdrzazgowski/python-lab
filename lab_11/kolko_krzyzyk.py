@@ -66,7 +66,6 @@ class Game:
         sign = player.sign
         b = self.board.board
 
-        # Check rows, columns and diagonals
         for i in range(3):
             if all(b[i][j] == sign for j in range(3)) or all(b[j][i] == sign for j in range(3)):
                 return True
