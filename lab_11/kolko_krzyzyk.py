@@ -76,7 +76,6 @@ class Game:
         return False
 
 
-
 player_one = Player("Player One", "O")
 player_two = Player("Player Two", "X")
 game = Game()
